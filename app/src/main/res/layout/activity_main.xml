@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EditText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        app:helperText="Enter Text"
+        android:backgroundTint="@color/darkBlue"
+        app:helperTextTextColor="@color/darkBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="eg. Clique Craft"
+            android:backgroundTint="@color/darkBlue"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generateToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="70dp"
+        android:text="toast"
+        app:rippleColor="@color/liteBlue"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generateNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateToast"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="notification"
+        app:rippleColor="@color/liteBlue"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generateModal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateNotification"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="modal"
+        app:rippleColor="@color/liteBlue"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generateCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateModal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Completed"
+        app:rippleColor="@color/liteBlue"/>
+
+</RelativeLayout>
